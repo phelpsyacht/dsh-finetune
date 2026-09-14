@@ -1,0 +1,5 @@
+# Bundle patch layer for dsh-finetune.
+# Composed after the profile's base bundles; inserts the plugin into the tree.
+- insert:
+  - id: finetune
+    name: 'dsh-finetune'

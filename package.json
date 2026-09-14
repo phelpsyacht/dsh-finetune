@@ -1,0 +1,33 @@
+{
+  "name": "dsh-finetune",
+  "version": "0.1.5",
+  "description": "DeepSeek Harness plugin: LLM fine-tuning tools (dataset validation & cleaning, job create/status/list/cancel/watch)",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test \"tests/*.test.mjs\""
+  },
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "engines": {
+    "node": ">23"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "finetune"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.2",
+    "@deepseek-ai/dsh-tools": "^0.1.5-rc.2",
+    "@deepseek-ai/schemastery": "^3.18.2"
+  }
+}
